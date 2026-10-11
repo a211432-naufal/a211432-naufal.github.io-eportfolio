@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MyFood Secure Coding e-Portfolio | Muhammad Fadli Shah (A211632)</title>
+<meta name="description" content="Student e-Portfolio: MyFood, an SDG 2 Zero Hunger app secured with secure coding fixes.">
+<style>
+:root{--bg:#f3f6f4;--surface:#fff;--ink:#14231c;--muted:#4b5d54;--line:#d5dfd9;--accent:#1f6b4a;--accent-ink:#fff;--hero:#0f2d21;--hero-ink:#eaf5ee}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1612;--surface:#16211b;--ink:#e7f0ea;--muted:#9bb0a4;--line:#27382f;--accent:#58c08e;--accent-ink:#0b1a12;--hero:#08140e;--hero-ink:#eaf5ee}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Georgia,"Times New Roman",serif}
+h1,h2,h3,nav,button,.btn,.meta{font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:var(--hero);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:4px;overflow-x:auto;align-items:center}
+nav strong{color:var(--hero-ink);margin-right:auto;padding:14px 12px 14px 0;white-space:nowrap}
+nav a{color:var(--hero-ink);text-decoration:none;padding:14px 12px;font-size:.95rem;white-space:nowrap}
+nav a:hover{background:rgba(255,255,255,.1)}
+header{background:var(--hero);color:var(--hero-ink);padding:72px 0 64px}
+header h1{font-size:clamp(2rem,6vw,3.6rem);line-height:1.1;margin:0 0 16px;max-width:16ch}
+header p{max-width:62ch;margin:0 0 10px;color:#cfe3d6}
+.meta{font-size:.9rem;color:#a9c7b6}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+section h2{font-size:1.8rem;margin:0 0 8px}
+.lead{color:var(--muted);max-width:68ch;margin:0 0 28px}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:12px}
+.card h3{margin:0;font-size:1.1rem}
+.card p{margin:0}
+.video{position:relative;aspect-ratio:16/9;background:#000;border-radius:6px;overflow:hidden}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.reflect{border-left:3px solid var(--accent);padding-left:12px;color:var(--muted);font-style:italic}
+.btn{display:inline-block;align-self:flex-start;background:var(--accent);color:var(--accent-ink);padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:700;font-size:.95rem}
+.btn:hover{filter:brightness(1.1)}
+.project{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px;margin-bottom:28px}
+.project h3{font-size:1.5rem;margin:0 0 8px}
+.team{list-style:none;padding:0;margin:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.team li{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px}
+.team b{display:block}
+.team span{color:var(--muted);font-size:.9rem;display:block}
+.tags{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.tags li{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-family:"Trebuchet MS",Arial,sans-serif;font-size:.9rem}
+footer{background:var(--hero);color:var(--hero-ink);padding:32px 0;text-align:center;font-family:"Trebuchet MS",Arial,sans-serif;font-size:.95rem}
+</style>
+</head>
+<body>
+<nav aria-label="Main navigation">
+  <div class="wrap">
+    <strong>Fadli's e-Portfolio</strong>
+    <a href="#home">Home</a>
+    <a href="#labs">Labs</a>
+    <a href="#projects">Projects</a>
+    <a href="#reflection">Reflection</a>
+    <a href="#skills">Skills</a>
+    <a href="#resources">Resources</a>
+  </div>
+</nav>
+
+<header id="home">
+  <div class="wrap">
+    <h1>Securing MyFood, one vulnerability at a time</h1>
+    <p>MyFood is an SDG 2 (Zero Hunger) mobile app that connects people with surplus food to people in need. This project secures the app by finding and fixing vulnerabilities in login, data storage, communication, search, input handling and access control.</p>
+    <p class="meta">Programme: Network Technology &nbsp;|&nbsp; Instructor: Dr Hanis</p>
+  </div>
+</header>
+
+<main>
+<section aria-labelledby="team-h" style="padding-bottom:32px">
+  <div class="wrap">
+    <h2 id="team-h">Group members</h2>
+    <ul class="team">
+      <li><b>Muhammad Fadli Shah Bin Shaharom</b><span>Matric No: A211632</span><span>Role: [Your Role]</span><span>Contribution: [Contribution]</span></li>
+      <li><b>Faizuddin Afiq Bin Mohd Shah</b><span>Matric No: A211440</span><span>Role: [Your Role]</span><span>Contribution: [Contribution]</span></li>
+      <li><b>Adam Harith Bin Norazmi</b><span>Matric No: A211089</span><span>Role: [Your Role]</span><span>Contribution: [Contribution]</span></li>
+      <li><b>Muhammad Irfan Naufal Bin Zuridi</b><span>Matric No: A211432</span><span>Role: [Your Role]</span><span>Contribution: [Contribution]</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="labs" aria-labelledby="labs-h">
+  <div class="wrap">
+    <h2 id="labs-h">Labs</h2>
+    <p class="lead">Lab entries will appear here. Each lab card has a title, short description, YouTube video and a short reflection.</p>
+    <div class="grid">
+      <article class="card">
+        <h3>Lab title (add yours)</h3>
+        <p>Short description of the lab.</p>
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Lab video" loading="lazy" allowfullscreen></iframe></div>
+        <p class="reflect">Write 2–3 sentences about what you learned in this lab.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="projects" aria-labelledby="projects-h">
+  <div class="wrap">
+    <h2 id="projects-h">Projects</h2>
+    <article class="project">
+      <h3>MyFood</h3>
+      <p><b>Problem statement:</b> Food is wasted while people go hungry, and apps that connect donors and receivers can expose users to attacks if they are not built securely. MyFood addresses this by sharing surplus food under SDG 2 while applying secure coding fixes to protect user accounts and data.</p>
+      <p><a class="btn" href="https://github.com/YOUR-USERNAME/MyFood" target="_blank" rel="noopener">View on GitHub</a></p>
+      <h3 style="font-size:1.2rem;margin-top:28px">Vulnerability solutions</h3>
+      <div class="grid">
+        <article class="card">
+          <h3>Case 1: Login test</h3>
+          <p>Live code vulnerability implementation of weak password storage and its fix.</p>
+          <div class="video"><iframe src="https://www.youtube.com/embed/1iiWw22Yj5s" title="Case 1 Login Test demo" loading="lazy" allowfullscreen></iframe></div>
+          <p class="reflect">I learned that storing plain-text passwords and accepting weak ones makes accounts easy to break into. Adding a password policy, salted hashing and account lockout made brute-force attacks much harder.</p>
+        </article>
+        <article class="card">
+          <h3>Case 2: Data 1</h3>
+          <p>Live code vulnerability implementation of sensitive data stored in plain text.</p>
+          <div class="video"><iframe src="https://www.youtube.com/embed/mSZaDhhLvqM" title="Case 2 Data 1 demo" loading="lazy" allowfullscreen></iframe></div>
+          <p class="reflect">I saw that anyone who can reach the device files could read the phone number and address stored in plain text. Using EncryptedSharedPreferences kept the data unreadable even when I opened the file directly.</p>
+        </article>
+        <article class="card">
+          <h3>Case 3: Data 2</h3>
+          <p>Live code vulnerability implementation of insecure communication and a hard-coded key.</p>
+          <div class="video"><iframe src="https://www.youtube.com/embed/X6-DfQbSTMI" title="Case 3 Data 2 demo" loading="lazy" allowfullscreen></iframe></div>
+          <p class="reflect">I realised that using http and a key written in the source code exposes secrets to anyone who reads the code or the network traffic. Moving the key to local.properties and using https protected both the key and the data while it travels.</p>
+        </article>
+        <article class="card">
+          <h3>Case 4: SQL injection</h3>
+          <p>Live code vulnerability implementation of a search query built from raw input.</p>
+          <div class="video"><iframe src="https://www.youtube.com/embed/RtbeyFFiw3Q" title="Case 4 SQL Injection demo" loading="lazy" allowfullscreen></iframe></div>
+          <p class="reflect">I saw that building a query from raw user input let me reveal private data with a simple input like ' OR 1=1 --. Using parameterised queries treated the input as plain text, so the same attack no longer worked.</p>
+        </article>
+        <article class="card">
+          <h3>Case 5: Input validation</h3>
+          <p>Live code vulnerability implementation of unchecked user input.</p>
+          <div class="video"><iframe src="https://www.youtube.com/embed/kYG0h_xF8CY" title="Case 5 Input validation demo" loading="lazy" allowfullscreen></iframe></div>
+          <p class="reflect">I learned that accepting any input, such as empty titles, script tags or negative quantities, can break the app or open the door to attacks. Validating length, characters and ranges made sure only safe, sensible data was saved.</p>
+        </article>
+        <article class="card">
+          <h3>Case 6: Access control</h3>
+          <p>Live code vulnerability implementation of deleting posts without an ownership check.</p>
+          <div class="video"><iframe src="https://www.youtube.com/embed/wXff7yPc25Q" title="Case 6 Access control demo" loading="lazy" allowfullscreen></iframe></div>
+          <p class="reflect">I found out that without an ownership check, any logged-in user could delete another user's post. Allowing only the owner or an admin to delete stopped unauthorised actions.</p>
+        </article>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="reflection" aria-labelledby="ref-h">
+  <div class="wrap">
+    <h2 id="ref-h">Reflection and learning journey</h2>
+    <p style="max-width:70ch">Through the MyFood project, I learned that security problems often come from small mistakes, such as storing passwords in plain text, trusting user input, or leaving a secret key in the code. By building each vulnerability first and then attacking it myself, I understood how easily these weaknesses can be exploited and why secure coding matters from the start.</p>
+    <p style="max-width:70ch">Applying the fixes (password hashing, encrypted storage, HTTPS, parameterised queries, input validation and access control) showed me that most of them are simple to add once I know the risk. This project changed how I think about development: I now write code with security in mind instead of treating it as something to add at the end.</p>
+  </div>
+</section>
+
+<section id="skills" aria-labelledby="skills-h">
+  <div class="wrap">
+    <h2 id="skills-h">Skills and tech stack</h2>
+    <ul class="tags">
+      <li>Kotlin</li><li>Jetpack Compose</li><li>Android Studio</li><li>SQLite</li>
+      <li>SQL Injection Prevention</li><li>Password Hashing (PBKDF2 with salt)</li><li>Account Lockout</li>
+      <li>EncryptedSharedPreferences</li><li>HTTPS/TLS</li><li>Input Validation</li>
+      <li>Access Control (Role-Based)</li><li>Secure API Key Management</li>
+    </ul>
+  </div>
+</section>
+
+<section id="resources" aria-labelledby="res-h" style="border-bottom:0">
+  <div class="wrap">
+    <h2 id="res-h">Resources</h2>
+    <ul style="max-width:70ch">
+      <li>Android SDK</li>
+      <li>Jetpack Compose and Material 3</li>
+      <li>AndroidX Security Crypto library (EncryptedSharedPreferences)</li>
+      <li>The SQLite database built into Android</li>
+      <li>The example.com test server for the HTTP/HTTPS demo</li>
+      <li>The Android Studio emulator</li>
+    </ul>
+    <p style="max-width:70ch"><b>AI assistance:</b> Claude (Anthropic) was used to help generate the app code, explain the vulnerabilities and fixes, and draft the e-Portfolio content. I reviewed, tested and demonstrated all of the code myself.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Muhammad Fadli Shah Bin Shaharom | Matric No: A211632 | 2026</div>
+</footer>
+</body>
+</html>
